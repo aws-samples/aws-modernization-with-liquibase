@@ -1,53 +1,59 @@
-# AWSWorkshop.io base workshop 
+# Liquibase Modernization Workshop
 
-This is a base workshop. Clone and start from this repo to create your workshop.
+This workshop teaches you how to bring databases operations to your regular CI\CD pipeline and implement continuos delivery for databases using [Liquibase](https://www.liquibase.com/)
 
-## Versions
- * 1.0
-    * Initial Release:
-    Overhauled to add prescriptive guidance. Improved readability and ease of use by making the base more templatized.
+# Description
 
+In this workshop, you will gain hands-on experience deploying database changes using Liquibase Pro. 
 
-## Description
-
- This is the base repo for building workshops with AWS. It utilizes the Hugo framework which involves simple mark down and HTML elements.
-
- In this workshop you are going to learn how to plan, build, and launch an AWS workshop.
-
- ## What is a workshop?
-
- An AWS workshop is a tool used to educate users and end customers on how to leverage partner solutions on their AWS workload. What better way to learn than to let customers get hands on with building or instrumenting products or services in an actual AWS environment? A workshop format is used because it scales well, meaning you can deliver the content and message whenever and wherever the customer happens to be: whether the customer is at work, home, or at an AWS event, they can get hands on and learn about building products and solutions.
-
- ## High level Planning
-
- While creating your workshop you will want to think about what you want to accomplish and how you want to educate users about your product. Depending on your needs you will either build a new workshop or use an existing one and modify it as you see fit.
-
- You will want to create a high-level plan for your workshop and determine the problem you are looking to solve. Identifying key concepts that you want the customers to learn about is also ideal. Then outlining what components and AWS services that you are going to utilize is also a key step. This will play a big role in creating the workflow that your customers will be following along with during the workshop. The workflow should be presented as a story and have an introduction, an educational body, and a conclusion that ties all the pieces together. A cleanup section will follow suit so that the customers can make sure their environments will not be charged after they finish the workshop. Determining what kind of event this workshop will be presented at is also rather important as it will help you have a way to capture leads which should be the end goal in mind. (More details are covered in the workshop itself)
+Liquibase Pro is a database DevOps solution that allows organizations to accelerate, secure, observe, and govern their database change pipelines. By completing this workshop, you’ll learn how to establish automated database CI/CD pipelines that monitor and re-enforce data governance policies and allow your developers to shift left by catching errors before they cause slowdowns or deployment failures. You’ll also learn how to add data governance with Quality Checks, a feature of Liquibase Pro that allows you to identify changes that could present undesired risk or practices that violate data governance policy or organization standards.
 
  ## Types of Events
  
- Identifying whether your workshop will be a self-paced workshop or an AWS hosted event will be crucial in your planning as well. If it’s a self-paced workshop then having highly contextualized sections will be very important as there won’t be anyone there to answer questions. Making sure that the workshop itself has all relevant information or that clear references have been outlined for any documentation that will be needed to successfully complete the workshop are crucial to the workshops overall success.
+ - Self-paced
+ - AWS hosted
 
- ## Build
+### Target Audience
 
- In this section you will be setting up your workflow, edit and build, test your environments, and publish the workshop if everything is prescriptive enough. Follow along to learn how to complete all of these tasks. 
+This workshop will help those who design and develop CI\CD pipelines, developer platforms, and DevOps architecture. In addition, this workshop will also benefit those who develop, deploy, and review database scripts as well as those who manage database instances, oversee data governance and compliance and looking to learn how to apply guardrails to database changes.
 
-## Launch
+### Learning Objectives
 
- With your workshop now being published, you can now identify some key got to market activities. 
+* What is database DevOps (or DataOps) and why is it important for accelerating software delivery.
+* What Liquibase is, and what benefits does it offer.
+* How to implement Liquibase Pro in your CI\CD pipelines with an eye towards standardization for all teams as well as capture logs for observability.
+* How to structure an application repository with database change management automation in mind.
+* How to communicate the value of Liquibase and database DevOps to your organization.
 
-## FAQ
+## Building the Website
 
- Commonly asked questions along with tools, tips, and samples that might be relevant to your workshop. Modify this FAQ section as you best see fit for your specific workshop and your customer base. 
+This site is built with Hugo, so you'll need it [installed](https://gohugo.io/getting-started/quick-start/#step-1-install-hugo)
+
+First, clone this repo:
+
+```bash
+git clone git@github.com:aws-samples/aws-modernization-with-liquibase.git
+```
+
+Ensure you've also cloned the submodules:
+
+```bash
+git submodule init
+git submodule update
+```
+
+Then serve the website with Hugo:
+
+```bash
+hugo server
+```
 
 ## Authors
 
 Contributors names and contact info
 
-* James Bland (@jamesbland123)
-* Parker Perry (@parkerperry)  
-* James Spencer (@folrig)
-* Eugene Mu (@eugenemu)
+* Marina Novikova (@mariswa)
+* TBD
 
 ## License
 
